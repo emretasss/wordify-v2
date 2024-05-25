@@ -1,0 +1,117 @@
+/* Ana konteyner */
+.cover-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5; /* Arka plan rengi eklendi */
+}
+
+/* Bildirim kutusu */
+.simpleBox {
+  display: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+  right: 10px;
+}
+
+/* Kart konteyneri */
+.all-card {
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Üst boşluk eklendi */
+}
+
+/* Düzenleme butonu */
+.butonEdit {
+  all: unset;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 0.3em;
+  width: 6em;
+  background-color: purple;
+  font-weight: 500;
+  display: inline-block;
+  color: white;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  height: 1.5em;
+}
+
+/* Quiz kartı */
+.quizCard {
+  display: flex;
+  flex-direction: column; /* Kartı dikey hizalama */
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem; /* Yükseklik artırıldı */
+  border: 1px solid black;
+  border-radius: 1em;
+  background-color: white;
+  font-size: larger; /* Yazı boyutu büyütüldü */
+  padding: 2em; /* İç boşluk artırıldı */
+  overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.quizCard:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Numaralandırma */
+.p-numbering {
+  font-size: 16px;
+  position: absolute;
+  top: 1em;
+  left: 1.2em;
+}
+
+/* Butonlar */
+.prevButton, .shuffleButton, .nextButton, .speakButton {
+  all: unset;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 0.3em;
+  width: 6em;
+  background-color: purple;
+  font-weight: 500;
+  display: inline-block;
+  color: white;
+  margin-top: 1em;
+  cursor: pointer;
+  height: 1.5em;
+}
+
+/* Butonlar arası boşluk */
+.spread-apart {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px; /* Üst boşluk eklendi */
+}
+
+/* Resimler */
+.image {
+  max-width: 80%; /* Resim genişliği azaltıldı */
+  height: auto; /* Yükseklik otomatik ayarlandı */
+  display: block;
+  margin: 20px auto; /* Daha belirgin hizalama */
+}
+
+/* Arka plandaki metinler */
+.back p {
+  margin-top: 1em;
+}

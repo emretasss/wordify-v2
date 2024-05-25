@@ -1,0 +1,115 @@
+/* Genel ayarlar */
+:root {
+    --background: #ffa5b4;
+    --primary-color: #ff7e9e;
+    --button-hover-color: #fd8c91;
+    --border-radius: 12px;
+    --font-family: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+    color: #343a40;
+    letter-spacing: 1px;
+    transition: background 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Container ayarları */
+.backgroundSets {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--background);
+    padding: 2rem;
+}
+
+/* Kart ayarları */
+.divSet, .divSetAdd {
+    width: 15em;
+    height: 20em;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.divSet:hover, .divSetAdd:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Buton ayarları */
+.butonSet {
+    all: unset;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1em;
+    width: 6em;
+    height: 1.5em;
+}
+
+.butonSet:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+/* Input ayarları */
+.inputSet {
+    all: unset;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    padding: 0.5em;
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+/* Responsive ayarları */
+@media (max-width: 768px) {
+    .divSet, .divSetAdd {
+        width: 100%;
+        margin: 0.5em;
+    }
+
+    .butonSet {
+        width: 80%;
+    }
+}

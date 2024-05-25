@@ -1,0 +1,81 @@
+.backgroundResult {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8bbd0; /* Açık pembe arka plan */
+}
+
+.containerResult {
+    width: 50%;
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-radius: 1em; /* Kenar yuvarlama */
+    padding: 2em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    text-align: center; /* Butonları ortalamak için */
+}
+
+.titluResult {
+    margin-top: 2em;
+    text-align: center; /* Metin hizalama */
+    color: #d81b60; /* Açık pembe metin rengi */
+    font-size: 2rem; /* Font boyutu */
+    margin-bottom: 1em; /* Alt boşluk */
+}
+
+.answerBox {
+    font-size: 1.2rem; /* Font boyutu */
+    color: #333; /* Metin rengi */
+}
+
+.correctAnswer {
+    color: #4caf50; /* Doğru cevapların rengi */
+}
+
+.wrongAnswer {
+    color: #f44336; /* Yanlış cevapların rengi */
+}
+
+.percentResult {
+    text-align: center; /* Metin hizalama */
+    margin-bottom: 2em; /* Alt boşluk */
+    color: #d81b60; /* Açık pembe metin rengi */
+    font-size: 1.5rem; /* Font boyutu */
+}
+
+.buttonBack,
+.buttonPrint,
+.buttonAnalyze {
+    all: unset;
+    border: none;
+    text-align: center; /* Metin hizalama */
+    border-radius: 0.5em; /* Kenar yuvarlama */
+    width: 10em;
+    background-color: #87d7ff; /* Açık pembe arka plan */
+    font-weight: bold;
+    display: inline-block; /* Butonları yanyana koymak için */
+    margin-right: 1em; /* Sağ boşluk */
+    color: #ffffff; /* Beyaz metin rengi */
+    margin-top: 1em; /* Üst boşluk */
+    cursor: pointer;
+    height: 3em;
+    line-height: 3em; /* Buton yüksekliği */
+    font-size: 1.2rem; /* Font boyutu */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+    list-style-type: none; /* Madde işaretini kaldır */
+}
+
+.buttonBack:hover,
+.buttonPrint:hover,
+.buttonAnalyze:hover {
+    background-color: #ff8eac; /* Koyu pembe hover rengi */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-left: 0;
+}

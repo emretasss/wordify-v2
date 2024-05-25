@@ -1,0 +1,143 @@
+/* Genel ayarlar */
+:root {
+    --primary-color: #6200ee;
+    --secondary-color: #f48c06;
+    --background-color: #9dd5fd;
+    --text-color: #333;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ana konteyner */
+.backgroundTest {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+/* Ana içerik konteyneri */
+.containerTest {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 60%;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 20px;
+}
+
+/* Soru alanı */
+.questionArea {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid pink;
+    border-radius: var(--border-radius);
+    padding: 1em;
+    margin-bottom: 50px;
+}
+
+/* Soru metni */
+.h1Question {
+    color: var(--text-color);
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Cevaplar alanı */
+.answersArea {
+    flex: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+/* Butonlar */
+.buttonAnswer {
+    all: unset;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: all 0.2s;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 30px; /* Butonlar arasındaki boşluğu artırır */
+}
+
+.buttonAnswer:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buttonAnswer:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonAnswer::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #ffd19f;
+}
+
+.buttonAnswer:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.correctQuestion {
+    position: absolute;
+    top: 0;
+    right: 60px; /* Yeni konum */
+    margin: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.wrongQuestion {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* "Number of questions" metni */
+.questionNumber {
+    position: absolute;
+    left: 2em;
+    bottom: 1em; /* Yeni konum */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+

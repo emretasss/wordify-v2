@@ -1,0 +1,96 @@
+/* Genel stil ayarları */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Arka plan rengi */
+}
+
+/* Arka plan ve konteyner */
+.background-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6B73FF 10%, #000DFF 100%);
+}
+
+/* Butonlar için genel stil */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+/* Start butonu */
+.startButton {
+  background-color: #FFD700;
+  color: #333;
+}
+
+.startButton:hover {
+  background-color: #FFC107;
+  transform: scale(1.05);
+}
+
+/* Sign Up ve Sign In butonları */
+.sign-up-btn, .sign-in-btn {
+  background-color: #FFFFFF;
+  color: #000DFF;
+}
+
+.sign-up-btn:hover, .sign-in-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Nav ve butonların ortalanması */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+/* Header stil */
+header {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px; /* Kartın maksimum genişliği */
+  width: 90%; /* Kartın genişliği */
+  margin: 0 auto;
+}
+

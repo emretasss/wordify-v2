@@ -1,0 +1,47 @@
+/* Satır bileşeni */
+.lineComp {
+    margin-bottom: 1em;
+}
+
+/* Son satır bileşeni */
+.lineComp:last-child {
+    margin-bottom: 2em;
+}
+
+/* İçerik */
+span {
+    margin: 0.5em;
+}
+
+/* Giriş alanları */
+input {
+    all: unset;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+/* Arka plan */
+.background {
+    height: auto;
+}
+
+/* Silme düğmesi */
+.buttonDelete {
+    all: unset;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 0.3em;
+    background-color: purple;
+    font-weight: 500;
+    display: inline-block;
+    margin: auto;
+    font-size: 12px;
+    color: white;
+    margin-top: 1em;
+    cursor: pointer;
+    height: 1.5em;
+    padding: 0.5em;
+    margin-left: 0.5em;
+}

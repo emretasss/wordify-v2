@@ -1,0 +1,47 @@
+/* StatisticsPage.css */
+.backgroundStatistics {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5dc; /* Soft beige color */
+    padding: 2em;
+}
+
+.containerStatistics {
+    width: 60%;
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+}
+
+.titleStatistics {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #333;
+    font-size: 2em;
+}
+
+.listStatistics {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.listItemStatistics {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    background-color: #e0e0e0; /* Light grey background */
+    border-radius: 0.5em;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.learnedWordsTitle,
+.unlearnedWordsTitle {
+    color: #666;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
